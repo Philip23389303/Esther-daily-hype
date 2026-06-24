@@ -1,0 +1,51 @@
+/* Chat input row */
+.chat-row {
+  display: flex;
+  width: 100%;
+  max-width: 340px;
+  gap: 0;
+  margin-bottom: 1.2rem;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: #110020;
+  border: 2.5px solid #9333ea;
+  border-right: none;
+  color: #e8b4ff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  border-radius: 0;
+}
+
+.chat-input::placeholder {
+  color: #5c0099;
+}
+
+.chat-input:focus {
+  border-color: #cc44ff;
+  background: #1a0030;
+}
+
+.chat-send {
+  padding: 0.75rem 1.1rem;
+  background: #9333ea;
+  border: 2.5px solid #9333ea;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Fredoka One', sans-serif;
+  border-radius: 0;
+  transition: all 0.1s;
+}
+
+.chat-send:hover {
+  background: #cc44ff;
+  border-color: #cc44ff;
+}
+
+.chat-send:active {
+  transform: translate(2px, 2px);
+}

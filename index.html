@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Luma">
+  <title>Luma 💜</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="scanlines"></div>
+
+  <div class="app">
+    <div class="subtitle-tag">// your companion //</div>
+
+    <div class="shark-wrap" id="sharkWrap">
+      <svg class="shark-svg" width="220" height="160" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="headGrad" cx="38%" cy="30%" r="62%">
+            <stop offset="0%" stop-color="#e0b0ff"/>
+            <stop offset="35%" stop-color="#a855f7"/>
+            <stop offset="100%" stop-color="#3b0076"/>
+          </radialGradient>
+          <radialGradient id="bodyGrad" cx="40%" cy="35%" r="60%">
+            <stop offset="0%" stop-color="#c084fc"/>
+            <stop offset="100%" stop-color="#4c1d95"/>
+          </radialGradient>
+          <radialGradient id="shineGrad" cx="35%" cy="28%" r="55%">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.75)"/>
+            <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+          </radialGradient>
+          <radialGradient id="eyeGrad" cx="30%" cy="30%" r="60%">
+            <stop offset="0%" stop-color="#5a1a9a"/>
+            <stop offset="100%" stop-color="#0d0020"/>
+          </radialGradient>
+        </defs>
+        <path d="M 175 70 L 215 48 L 205 75 L 215 100 Z" fill="#6d28d9" stroke="#c084fc" stroke-width="2.5" stroke-linejoin="round"/>
+        <ellipse cx="110" cy="82" rx="75" ry="42" fill="url(#bodyGrad)" stroke="#c084fc" stroke-width="2.5"/>
+        <ellipse cx="105" cy="95" rx="50" ry="22" fill="#ddd6fe" opacity="0.18"/>
+        <path d="M 95 42 L 112 15 L 130 42" fill="#6d28d9" stroke="#c084fc" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M 75 98 L 50 122 L 90 110" fill="#6d28d9" stroke="#c084fc" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M 120 100 L 140 118 L 148 102" fill="#5b21b6" stroke="#c084fc" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M 100 122 L 95 142 L 115 124" fill="#6d28d9" stroke="#c084fc" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="62" cy="72" r="52" fill="url(#headGrad)" stroke="#c084fc" stroke-width="3"/>
+        <ellipse cx="47" cy="48" rx="22" ry="14" fill="url(#shineGrad)"/>
+        <ellipse cx="72" cy="42" rx="10" ry="6" fill="white" opacity="0.25"/>
+        <path d="M 18 76 Q 22 108 62 115 Q 100 120 106 80" fill="#1a0033" stroke="#c084fc" stroke-width="2.5"/>
+        <polygon points="24,78 29,97 35,78" fill="white" stroke="#7c3aed" stroke-width="1.2"/>
+        <polygon points="35,80 40,101 46,80" fill="white" stroke="#7c3aed" stroke-width="1.2"/>
+        <polygon points="46,83 51,105 57,83" fill="white" stroke="#7c3aed" stroke-width="1.2"/>
+        <polygon points="57,86 62,109 68,86" fill="white" stroke="#7c3aed" stroke-width="1.2"/>
+        <polygon points="68,85 73,107 79,85" fill="white" stroke="#7c3aed" stroke-width="1.2"/>
+        <polygon points="79,82 84,103 90,82" fill="white" stroke="#7c3aed" stroke-width="1.2"/>
+        <polygon points="90,79 95,98 100,79" fill="white" stroke="#7c3aed" stroke-width="1.2"/>
+        <path d="M 30 105 Q 28 130 45 138 Q 62 145 80 138 Q 97 130 95 105 Q 78 115 62 114 Q 45 115 30 105Z" fill="#c2185b" stroke="#880e4f" stroke-width="2"/>
+        <ellipse cx="62" cy="122" rx="18" ry="9" fill="#f06292" opacity="0.5"/>
+        <path d="M 62 110 Q 62 138 62 138" stroke="#880e4f" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <polygon points="34,107 37,99 40,107" fill="#f3e5ff" stroke="#7c3aed" stroke-width="0.8"/>
+        <polygon points="48,112 51,103 54,112" fill="#f3e5ff" stroke="#7c3aed" stroke-width="0.8"/>
+        <polygon points="62,114 65,105 68,114" fill="#f3e5ff" stroke="#7c3aed" stroke-width="0.8"/>
+        <polygon points="76,112 79,103 82,112" fill="#f3e5ff" stroke="#7c3aed" stroke-width="0.8"/>
+        <polygon points="88,108 91,100 94,108" fill="#f3e5ff" stroke="#7c3aed" stroke-width="0.8"/>
+        <circle cx="38" cy="42" r="15" fill="white" stroke="#c084fc" stroke-width="2.5"/>
+        <circle cx="80" cy="38" r="13" fill="white" stroke="#c084fc" stroke-width="2.5"/>
+        <circle cx="38" cy="43" r="10" fill="url(#eyeGrad)"/>
+        <circle cx="80" cy="39" r="9" fill="url(#eyeGrad)"/>
+        <circle cx="39" cy="44" r="6" fill="#080010"/>
+        <circle cx="81" cy="40" r="5" fill="#080010"/>
+        <circle cx="35" cy="40" r="3" fill="white"/>
+        <circle cx="77" cy="36" r="2.5" fill="white"/>
+        <circle cx="43" cy="47" r="1.5" fill="white" opacity="0.7"/>
+        <circle cx="85" cy="43" r="1.2" fill="white" opacity="0.7"/>
+        <text x="2" y="22" class="sparkle" font-size="14" fill="#ffcc00">✦</text>
+        <text x="190" y="30" class="sparkle s2" font-size="11" fill="#cc88ff">✦</text>
+        <text x="4" y="130" class="sparkle s3" font-size="9" fill="#ff88dd">✦</text>
+      </svg>
+    </div>
+
+    <h1 class="luma-name">Luma 💜</h1>
+    <p class="greeting" id="greeting">Good evening, Esther 🦈</p>
+
+    <div class="btn-panel">
+      <button class="luma-btn btn-enc" onclick="respond('enc')">
+        <span class="btn-icon">💪</span>Hype me up
+      </button>
+      <button class="luma-btn btn-laugh" onclick="respond('laugh')">
+        <span class="btn-icon">💀</span>Make me laugh
+      </button>
+      <button class="luma-btn btn-roast" onclick="respond('roast')">
+        <span class="btn-icon">🦈</span>Roast me (lovingly)
+      </button>
+    </div>
+
+    <div class="chat-row">
+      <input type="text" id="chatInput" class="chat-input" placeholder="talk to luma..." />
+      <button class="chat-send" onclick="sendChat()">→</button>
+    </div>
+
+    <div class="bubble" id="bubble">
+      <div class="bubble-inner" id="bubbleText"></div>
+    </div>
+
+    <p class="status">[ luma v3.0 — online 💜 ]</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
