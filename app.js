@@ -2,7 +2,7 @@
 // PASTE YOUR RENDER URL HERE
 // e.g. https://luma-server.onrender.com
 // ==============================
-const SERVER_URL = 'YOUR_RENDER_URL_HERE';
+const SERVER_URL = 'https://esther-daily-hype.onrender.com';
 
 const responses = {
   enc: [
